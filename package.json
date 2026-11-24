@@ -7,8 +7,12 @@
   "bin": {
     "off-mcp-server": "dist/cli.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
+    "prepare": "tsc",
     "start": "node dist/index.js",
     "dev": "ts-node-esm src/index.ts",
     "test": "vitest run",
